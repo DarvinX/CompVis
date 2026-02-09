@@ -230,45 +230,88 @@ python3 -m noise.gaussian --input ./images/cat_512.jpg --show
 
 ## 🎨 Examples & Results
 
-### Mean Filter
+### 🔲 Mean Filter
+
+Apply averaging filter for smoothing and noise reduction.
+
 **Command:**
 ```bash
 python3 -m spatial_filters.mean --input ./images/cat_512.jpg --kernel_size 5 --save --compare
 ```
 
-**Result:**
+**Input Image:**
 
-![Result of mean filter](./results/mean_result.jpg)
+<img src="./images/cat_512.jpg" width="400" alt="Original Image">
 
-*Smoothing effect with kernel size 5*
+**Output Result:**
+
+<img src="./results/mean_result.jpg" width="400" alt="Mean Filter Result">
+
+**Side-by-Side Comparison:**
+
+<img src="./results/mean/Figure_1.png" width="800" alt="Mean Filter Comparison">
+
+*Smoothing effect with kernel size 5 - notice the reduced noise and softer details*
 
 ---
 
-### Median Filter
+### 🎯 Median Filter
+
+Excellent for removing salt & pepper noise while preserving edges.
+
 **Command:**
 ```bash
 python3 -m spatial_filters.median --input ./images/cat_saltpepper.jpg --kernel_size 3 --save --compare
 ```
 
-**Result:**
+**Input Image (with Salt & Pepper Noise):**
 
-![Result of median filter](./results/med_result.jpg)
+<img src="./images/cat_saltpepper.jpg" width="400" alt="Noisy Image">
 
-*Effective salt & pepper noise removal while preserving edges*
+**Output Result:**
+
+<img src="./results/med_result.jpg" width="400" alt="Median Filter Result">
+
+*Effective salt & pepper noise removal while preserving edges - notice the clean result with sharp edges maintained*
 
 ---
 
-### Gaussian Filter
+### 🌫️ Gaussian Filter
+
+Natural smooth blur using Gaussian kernel.
+
 **Command:**
 ```bash
 python3 -m spatial_filters.gaussian --input ./images/cat_512.jpg --kernel_size 5 --save --compare
 ```
 
-**Result:**
+**Input Image:**
 
-![Result of gaussian filter](./results/gaus_result.jpg)
+<img src="./images/cat_512.jpg" width="400" alt="Original Image">
 
-*Natural smooth blur using Gaussian kernel*
+**Output Result:**
+
+<img src="./results/gaus_result.jpg" width="400" alt="Gaussian Filter Result">
+
+*Natural smooth blur - notice the gradual, aesthetically pleasing blur effect*
+
+---
+
+### 🧂 Noise Generation Example
+
+**Adding Salt & Pepper Noise:**
+
+```bash
+python3 -m noise.saltpepper --input ./images/cat_512.jpg --output ./results/cat_noisy.jpg --percent 30 --save
+```
+
+**Before (Original):**
+
+<img src="./images/cat_512.jpg" width="350" alt="Original">
+
+**After (30% Salt & Pepper Noise):**
+
+<img src="./results/cat_noisy.jpg" width="350" alt="With Noise">
 
 ---
 
