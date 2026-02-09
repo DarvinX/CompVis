@@ -20,6 +20,7 @@
 - [Project Structure](#-project-structure)
 - [Roadmap](#-roadmap)
 - [Credits](#-credits)
+- [Notes](#-notes)
 
 ---
 
@@ -323,18 +324,7 @@ CompVis/
 
 **Sample Images:** Photographed at IIT Kharagpur
 
-**Author:** [Your Name]
-
 **License:** MIT License (see [LICENSE](LICENSE))
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- 🐛 Report bugs
-- 💡 Suggest new features
-- 🔧 Submit pull requests
 
 ---
 
